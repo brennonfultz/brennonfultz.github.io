@@ -1,0 +1,24 @@
+
+:root {
+    --primary-red: #680d0c; /* Bright Red */
+    --secondary-red: #c62828; /* Darker Red */
+    --primary-orange: #fb8c00; /* Bright Orange */
+    --secondary-orange: #f5a700; /* Darker Orange */
+    --primary-brown: #6d4c41; /* Brown */
+    --secondary-brown: #337774; /* Darker Brown */
+    --primary-green: #43a047; /* Green */
+    --secondary-green: #388e3c; /* Darker Green */
+
+    /* Background Colors */
+    --background-light: #f5f5f5; /* Light Background */
+    --background-dark: #333; /* Dark Background */
+
+    /* Text Colors */
+    --text-light: #ffffff; /* White */
+    --text-dark: #212121; /* Dark Gray */
+    --img-text-color: #f8f9fa;
+
+    /* Border Colors */
+    --border-light: #e0e0e0; /* Light Border */
+    --border-dark: #bdbdbd; /* Darker Border */
+}

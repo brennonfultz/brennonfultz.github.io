@@ -1,0 +1,228 @@
+/* styles.css */
+body {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('light_wood.jpg'); /* Replace with your image path */
+    background-repeat: repeat; /* Tiling the image */
+    background-size: 25% auto; /* Keeps the image at its original size */
+    background-position: top left;
+    /*scroll-behavior: smooth;*/
+}
+
+.sidebar-logo {
+    border-radius: 50%;
+}
+
+/* Replace with variables from vars.css */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-red);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: var(--primary-orange);
+    text-decoration: underline;
+}
+
+.fixed-sidebar .nav-item {
+    margin-bottom: 3px; /* Space between items */
+}
+
+.fixed-sidebar .nav-link:hover {
+    background-color: var(--primary-red);
+    color: #fff;
+}
+
+.fixed-sidebar .nav-link {
+    color: var(--primary-orange);
+    padding: 10px 20px;
+}
+
+/* Fix for mobile sidebar background */
+.offcanvas {
+    background-color: var(--secondary-brown); /* Light blue background */
+}
+
+.offcanvas .nav-link {
+    color: var(--primary-orange); /* Set text color to light */
+}
+
+/* Fix for mobile top bar background */
+.navbar {
+    background-color: var(--secondary-orange) !important; /* Apply light blue background with !important */
+}
+
+.navbar-light .navbar-brand {
+    color: var(--primary-red); /* Ensure the text is visible on the light blue background */
+}
+
+
+.offcanvas .nav-item {
+    margin-bottom: 2px; /* Space between items in mobile view */
+}
+
+.nav-link.active {
+    background-color: var(--primary-red);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.fixed-sidebar .nav-link:hover {
+    background-color: var(--primary-red);
+    color: #fff;
+    border-radius: 5px;
+}
+
+header {
+    background-color:rgba(97, 16, 16, 0.884);
+    background-image: url(''); /* insert hero background img */
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    border: 3px solid rgba(97, 16, 16, 0.884);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-orange);
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 #290503,  
+         1px -1px 0 #290503,
+        -1px  1px 0 #290503,
+         1px  1px 0 #290503;
+    padding-top: 60px; /* Adjust if needed */
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 60vh; /* Adjust the height for mobile devices */
+    }
+}
+
+header .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header .hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-red);
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+    max-height: 500px; /* Fixed height */
+    width: auto; /* Auto width to maintain aspect ratio */
+    object-fit: contain; /* Ensures the image covers the entire area without stretching */
+}
+
+
+.free-image img {
+    max-width: 50%;
+    border-radius: 5px;
+    border: 3px solid rgba(97, 16, 16, 0.884);
+}
+
+@media only screen and (max-width: 768px) {
+    .free-image img {
+        width: 100%; /* Adjust to full width of its container */
+        max-width: none; /* Remove max-width limit */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+@media only screen and (max-width: 768px) { 
+      .carousel-control-prev {
+        left: -20px; /* Move button closer to the edge */
+      }
+      .carousel-control-next {
+        right: -20px; /* Move button closer to the edge */
+      }
+}
+@media (max-width: 768px) {
+    .carousel-inner img {
+      max-width: 90%; /* Prevents overlapping */
+      height: auto;   /* Maintain aspect ratio */
+      margin: 0 auto; /* Center the image */
+    }
+  }
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--primary-red);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0;
+}
